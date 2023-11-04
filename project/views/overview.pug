@@ -1,0 +1,12 @@
+extends base
+
+block content
+  main.main
+    .card-container
+    
+      each tour in tours
+        .div
+          - const a=`total duration ${tour.duration}`
+          .div
+            p= a
+            a(href=`/:${tour.name}`)="dfsdfsd"

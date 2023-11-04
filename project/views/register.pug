@@ -1,0 +1,18 @@
+extends base
+
+block content
+  main.main
+    .login-form
+      h2.heading-secondary.ma-bt-lg Register
+      form.form.form--login
+        .form__group
+          label.form__label registerName
+          input#email.form__input( required, minlength='10')
+        .form__group.ma-bt-md
+          label.form__label registerAddress
+          input#password.form__input(required, minlength='8')
+        .form__group.ma-bt-md
+          label.form__label  registerDetail
+          input#password.form__input( required, minlength='8')
+        .form__group
+          button.btn.btn--green Enter
